@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login User</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <style>
+        label{
+            color: white;
+        }
+    </style>
+</head>
+<body class="loginbody">
+    {{> header}}
+    {{!-- alert messages --}}
+    {{!-- error alert message --}}
+        {{#if errMsg}}
+        <div class="alert alert-danger">
+            <p>{{errMsg}}</p>
+        </div>
+        {{/if}}
+    {{!-- success alert message --}}
+        {{#if succMsg}}
+        <div class="alert alert-success">
+            <p>{{succMsg}}</p>
+        </div>
+        {{/if}}
+
+    {{!-- login form --}}
+        <form method="post" action="/user/postLoginData" class="form">
+        <div class="title">Welcome, Buddy</div>
+        <div class="subtitle">Let's create your account!</div>
+
+            <div class="input-container ic2">
+                <label>Email:</label>
+                <input type="email" class="input" name="email">
+            </div>
+
+            <div class="input-container ic2">
+                <label>Password:</label>
+                <input type="password" class="input" name="password">
+            </div>
+            <div class="input-container ic2">
+                <span class="clicks"><a href="./forget">Forget your password</a></span>
+                <span class="clicks" style="margin-left: 90px;"><a href="./register">Create new account</a></span>
+            </div>
+        {{!-- submit button --}}
+            <input type="submit" class="submit"><br>
+        </form>
+</body>
+</html>

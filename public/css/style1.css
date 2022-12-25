@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+.card-body {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.offerPrice {
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.images img {
+    width: 100%;
+}
+
+.mainbody {
+    background: url("../images/peakpx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px 0px;
+    height: 600px;
+}
+
+.mainbody h2,
+h1 {
+    color: white;
+}
+
+.headerset {
+    position: relative;
+    left: 330px;
+    top: -80px;
+}
+
+.showmain {
+    background: url("/images/wallpaper2.png");
+}
+
+.homeLogo {
+    width: 200px;
+}
+
+.dbtn,
+.edtn {
+    width: 70px;
+    font-weight: bolder;
+}
+
+.edtn {
+    margin-left: 110px;
+}
+
+.count {
+    font-weight: bold;
+}
+
+.cart i {
+    font-size: xx-large;
+}
+
+.logout {
+    width: 100px;
+}
+
+.minus,
+.plus {
+    font-size: 30px;
+    margin: 0px 20px;
+}
+
+.minus {
+    color: red;
+}
+
+.plus {
+    color: green;
+}
